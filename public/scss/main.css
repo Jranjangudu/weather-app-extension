@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  font-size: 18px;
+  font-family: monospace;
+  color: blue;
+}
+
+input[type="search"] {
+  padding: 10px 10px;
+  width: 90%;
+  border-radius: 0 0 12px 12px;
+  border: none;
+  outline: none;
+  box-shadow: 4px 7px 10px 1px rgba(171, 139, 139, 0.75);
+  -webkit-box-shadow: 4px 7px 10px 1px rgba(171, 139, 139, 0.75);
+  -moz-box-shadow: 4px 7px 10px 1px rgba(171, 139, 139, 0.75);
+}
+
+.sunny {
+  width: 300px;
+  height: 300px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/21/03/56/landscape-1844231__340.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.cloud {
+  width: 300px;
+  height: 300px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/05/15/14/24/weather-768460__340.jpg");
+  background-size: 100% 100%;
+}
+
+.search_container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: green;
+}
+
+.offline {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.weather-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location {
+  margin-top: 20px;
+}
+
+.location > h1 {
+  text-align: center;
+  font-size: 25px;
+  font-family: monospace;
+  color: #fff;
+}
+
+.location p {
+  text-align: center;
+  font-family: monospace;
+  color: #fff;
+}
+
+.temp-value {
+  font-size: 30px;
+  color: #fff;
+}
+
+.weather {
+  font-size: 20px;
+  color: #fff;
+}
+
+.error_message {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  color: red;
+  font-size: 20px;
+}
+
+.status_message {
+  margin-top: 40px;
+  font-size: 15px;
+  padding: 10px;
+}
+/*# sourceMappingURL=main.css.map */
