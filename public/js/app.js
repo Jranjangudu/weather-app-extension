@@ -21,7 +21,7 @@ window.addEventListener("online", (event) => {
 
 let storage = localStorage.getItem("location");
 if (!storage) {
-  localStorage.setItem("location", "delhi");
+  localStorage.setItem("location", "hyderabad");
 }
 const api_key = "a1eaf28583d42c2f30fbfef8a6cd4b99";
 const base_url = "https://api.openweathermap.org/data/2.5/";
@@ -43,7 +43,7 @@ if (localStorage.getItem("status") === "true") {
       const cur_data = await response.json();
       localStorage.setItem("location", cur_data.name);
       let bg = document.getElementById("container_background");
-      cur_data.main.temp > 12
+      Math.round(cur_data.main.temp) > 18
         ? (bg.classList = "sunny")
         : (bg.classList = "cloud");
       timerId = undefined;
@@ -60,6 +60,7 @@ if (localStorage.getItem("status") === "true") {
           </div>
           <div class="weather ">${cur_data.weather[0].main}</div>
         </div>
+        
         </div>
     
       `;
